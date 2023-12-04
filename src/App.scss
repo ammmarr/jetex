@@ -1,0 +1,99 @@
+@font-face {
+  font-family: helvetica;
+  src: url(./assets/fonts/helvetica/Helvetica-Bold.ttf)
+    url(./assets/fonts/helvetica/Helvetica-BoldOblique.ttf)
+    url(./assets/fonts/helvetica/helvetica-compressed-5871d14b6903a.otf)
+    url(./assets/fonts/helvetica/helvetica-light-587ebe5a59211.ttf)
+    url(./assets/fonts/helvetica/Helvetica-Oblique.ttf)
+    url(./assets/fonts/helvetica/Helvetica.ttf);
+}
+@font-face {
+  font-family: orator;
+  src: url(./assets/fonts/Orator-Std-Font/Orator-Std-Font.otf);
+}
+@font-face {
+  font-family: Courier "Courier New", Courier, monospace;
+  src: url(./assets/fonts/cour.ttf);
+}
+:root,
+html,
+body,
+*,
+::after,
+::before {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: orator, "Microsoft YaHei", 微软雅黑, "PingFang SC", 萍方,
+    "Noto Sans", SimHei, 黑体, "Gill Sans", "Gill Sans MT", Calibri, serif;
+  color: #4b3628;
+}
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  width: fit-content;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5rem;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+:root {
+  --main-bg: #f6f1eb;
+  --white: #f6f1eb;
+}
+body {
+  background-color: var(--main-bg);
+}
+
+// nav buttons styles
+.nav-button {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: fit-content;
+  cursor: pointer;
+  img {
+    width: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .nav-button {
+    span {
+      display: none;
+    }
+  }
+}
+
+.max-width-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 300vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  .max-width-container {
+    width: 90%;
+    max-width: 1500px;
+    height: fit-content;
+  }
+}

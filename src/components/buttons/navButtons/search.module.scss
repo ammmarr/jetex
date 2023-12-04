@@ -1,0 +1,19 @@
+.container {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  background-color: white;
+  border: 1px solid grey;
+  width: fit-content;
+  img {
+    width: 30px;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 50%;
+  }
+}
